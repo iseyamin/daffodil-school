@@ -37,6 +37,16 @@ font-size: 1.25rem;
 color: #fff;
 background: #FEA301;
 }
+.btn-sec{
+border-radius: 48px;
+width: 174px;
+height: 45px;
+border: none;
+background: #3cd8e8;
+font-weight: 500;
+font-size: 1rem;
+color: #fff;
+}
 header{
     max-width: 80%;
     margin: 0 auto;
@@ -154,6 +164,73 @@ header{
     gap: 10px;
 }
 
+/* story section */
+.stories-part{
+    background: url(/assets/bg.png);
+    background: linear-gradient(360deg, rgba(254, 163, 1, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%);
+}
+.story2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.stories{
+    max-width: 80%;
+    margin: 0 auto;
+    gap: 20px;
+}
+.story1{
+    border-radius: 16px;
+    width: 540px;
+    background: #fff;
+}
+.s1-pic{
+  border-radius: 16px 16px 0 0;
+}
+.story1 h4{
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: 1.5rem;
+}
+.s1-subtitle{
+    margin-left: 35px;
+    margin-right: 35px;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #666;
+}
+#s1-btn{
+    margin-left: 50px;
+    margin-top: -40px;
+}
+.s2-pic{
+    border-radius: 16px 16px 0 0;
+    width: 100%;
+    
+}
+.story2-card{
+    border-radius: 16px;
+    background: #fff;
+    max-height: 350px;
+}
+.s2-title{
+    font-size: 1rem;
+    padding-left: 38px;
+    padding-right: 38px;
+}
+#s2-btn{
+    margin-left: 50px;
+    margin-top: -40px;
+    background: green;
+}
+.buttonn{
+    
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+
 
 /* Responsive mobile */
 @media screen and (max-width:576px) {
@@ -208,5 +285,32 @@ header{
     .slides{
         display: none;
     }
+
+
+
+    .story1{
+        display: none;
+    }
+    .story2{
+        justify-items: center;
+    }
+    .story2-card{
+    max-width: 175px;
+    max-height: 180px;
+}
+    .s2-title{
+        font-size: .5rem;
+    }
+    #s2-btn{
+        border-radius: 29px;
+             width: 103px;
+       height: 22px;
+       font-size: .5rem;
+       margin-top: -80px;
+       margin-left: 10px;
+    }
+
+
+
 
 }

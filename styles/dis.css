@@ -42,6 +42,13 @@ header{
     margin: 0 auto;
 }
 /* nav-bar styles */
+.btn-menu{
+    display: none;
+    cursor: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+}
 .nav-bar{
     justify-content: space-between;
     align-items: center;
@@ -60,4 +67,59 @@ header{
     text-decoration: none;
     font-weight: 500;
     font-size: 1.25rem;
+}
+
+/* banner styles */
+.banner{
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-txt{
+    max-width: 680px;
+}
+.banner-title{
+    font-size: 3.5rem;
+    margin-bottom: 24px;
+}
+.banner-subtitle{
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+#banner-btn{
+    background: #111111;
+}
+
+
+
+/* Responsive mobile */
+@media screen and (max-width:576px) {
+    
+    .sc-name, .nav-links, .nav-btn{
+        display: none;
+    }
+    .btn-menu{
+        display: block;
+    }
+    .nav-bar{
+        padding-bottom: 15px;
+        border-bottom: 1px solid black;
+        
+    }
+    .banner{
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    .banner img{
+        max-width: 100%;
+    }
+    .banner-title{
+        font-size: 2rem;
+    }
+    .banner-subtitle{
+        font-weight: 500;
+        font-size: .9rem;
+    }
+
 }

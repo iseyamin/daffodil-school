@@ -226,10 +226,55 @@ header{
 .buttonn{
     
     text-align: center;
-    margin-top: 80px;
-    margin-bottom: 60px;
+    padding-top: 80px;
+    padding-bottom: 60px;
 }
 
+/* footer */
+footer{
+    background: #01ACFD;
+}
+.last{
+    justify-content: center;
+    gap: 100px;
+    padding-left: 130px;
+    padding-right: 200px;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    color: #fff;
+    
+}
+.info{
+    width: 400px;
+}
+.info-logo{
+    align-items: center;
+}
+.info-logo h3{
+    font-size: 2.5rem;
+
+}
+.info p{
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+.about h4{
+    font-size: 1.5rem;
+}
+.about-links{
+    flex-direction: column;
+    gap: 20px;
+}
+.about-link{
+    text-decoration: none;
+    color: #fff;
+}
+.contact h3{
+    font-size: 1.6rem;
+}
+.contact-icons{
+    gap: 10px;
+}
 
 
 /* Responsive mobile */
@@ -308,6 +353,31 @@ header{
        font-size: .5rem;
        margin-top: -80px;
        margin-left: 10px;
+    }
+
+    .last{
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .info{
+       width: 300px;
+    }
+    .info-logo h3{
+    font-size: 2rem;
+
+   }
+   .info p{
+    font-size: 1rem;
+    }
+    .contact-icons{
+        gap: 10px;
+    }
+    .buttonn{
+        padding-top: 30px;
+      padding-bottom: auto;
     }
 
 
